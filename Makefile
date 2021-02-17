@@ -7,7 +7,6 @@ APP = tee
 all: $(APP)
 
 $(APP): $(OBJS)
-	echo "$(OBJS)"
 	gcc $(OBJS) -o $@
 
 %.o: %.c
